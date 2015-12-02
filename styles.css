@@ -19,22 +19,37 @@ span {
   position: relative;
 }
 
-.box {
+#header {
+  background-color: darkblue;
+  height: 100px;
+}
+
+.sidebar {
+  border: dotted 1px #000;
+  margin: 30px 0 0 20px;
+  padding: 10px;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.main {
   background-color: lightgray;
-  margin: 30px;
+  margin: 30px auto;
   padding: 30px;
   border: 1px solid #000;
   position: relative;
-  display: inline-block;
+  display: block;
   max-width: 50vw;
-  float: left;
 }
+
 .repositioned {
   background-color: orange;
   position: absolute;
   top: 10px;
   left: 10px;
 }
+
 .inside-box {
   display: inline-block;
   margin: 20px;
@@ -42,10 +57,11 @@ span {
   border: #888 solid 1px;
   float: right;
 }
-.content {
-  border: dotted 1px #000;
-  padding: 5px;
-  display: inline-block;
-  position: absolute;
-  float: right;
+
+#footer {
+  background-color: orange;
+  background-position: bottom;
+  height: 100px;
+  display: block;
+  clear: both;
 }
