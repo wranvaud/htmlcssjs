@@ -1,4 +1,5 @@
 window.onload= function() {
+
   var autoReloadCheckbox = document.getElementById("checkreload");;
   autoReloadCheckbox.onchange=autoReload;
   function autoReload (checked) {
