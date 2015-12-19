@@ -32,10 +32,9 @@ span {
   background-image: linear-gradient(60deg, #2aa, #284);
   height: 100px;
   text-align: center;
-  position: relative;
 }
 
-#header span {
+#header .sitename span {
   font-size: 30px;
   padding: 5px;
   border: 1px dashed #000;
@@ -53,7 +52,7 @@ span {
 .sitename:hover {
   color: #004;
   text-shadow: 0 0 10px #004;
-  transform:  scale(1.3);
+  transform:  scale(1.3) rotate(-3deg);
 }
 
 
