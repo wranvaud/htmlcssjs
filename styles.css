@@ -32,30 +32,32 @@ span {
   background-image: linear-gradient(60deg, #2aa, #284);
   height: 100px;
   text-align: center;
+  color: darkblue;
 }
 
-#header .sitename span {
+#header span {
   font-size: 30px;
   padding: 5px;
   border: 1px dashed #000;
-  color: darkblue;
   background-color: inherit;
 }
 
 .sitename {
+  color: darkblue;
   line-height: 100px;
   display: inline-block;
-  transition-duration: 1s;
-  transition-property: font-size, color, text-shadow, transform;
+  transition-property: color, text-shadow, transform;
+  transition-duration: 500ms, 500ms, 500ms;
+  transition-delay: 0s, 0s, 1s;
+  transition-timing-function: ease, ease-in, ease;
 }
 
 .sitename:hover {
-  color: #004;
+  color: lightblue;
   text-shadow: 0 0 10px #004;
   transform:  scale(1.3) rotate(-3deg);
+  transition-delay: 0, 0, 500ms;
 }
-
-
 
 .sidebar {
   border: dotted 1px #000;
