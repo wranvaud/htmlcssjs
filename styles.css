@@ -93,5 +93,5 @@ span {
 
 #footer {
   height: 100px;
-  background-image: -webkit-repeating-radial-gradient(circle closest-side, darkblue, lightgreen);
+  background-image: -webkit-repeating-radial-gradient(circle closest-side, darkblue, lightgreen, red, orange, darkblue);
 }
