@@ -49,6 +49,10 @@ span {
   display: inline-block;
   top: 21px;
   border-radius: 10px;
+  background-color: gray;
+}
+
+span.logo:hover {
   animation-name: psychologo;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -56,7 +60,7 @@ span {
   animation-fill-mode: forwards;
 }
 
-span.logo:hover {
+span.logo:active {
   animation-play-state: paused;
 }
 
