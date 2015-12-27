@@ -119,6 +119,7 @@ span.logo:active {
   width: 80vw;
   min-width: 320px;
   max-width: 1080px;
+  overflow: auto;
 }
 
 .repositioned {
@@ -134,10 +135,6 @@ span.logo:active {
   padding: 3px;
   border: #888 solid 1px;
   float: right;
-}
-
-.closing-box {
-  clear: both;
 }
 
 #footer {
