@@ -52,10 +52,10 @@ span {
   background-color: gray;
 }
 
-span.logo:hover {
+#header .sitename span.logo:hover {
   animation-name: psychologo;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -130,10 +130,14 @@ span.logo:active {
 
 .inside-box {
   display: inline-block;
-  margin: 20px;
+  margin: 20px 20px 0;
   padding: 3px;
   border: #888 solid 1px;
   float: right;
+}
+
+.closing-box {
+  clear: both;
 }
 
 #footer {
