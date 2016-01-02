@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-image: -webkit-linear-gradient(top, #284, #284);
-  background-size: 100px;
+  background-size: 100px 100px;
   background-position: left bottom;
   background-repeat: repeat-x;
   border: 1px solid #000;
@@ -53,7 +53,7 @@ span {
 }
 
 #header .sitename span.logo:hover {
-  animation-name: psychologo;
+  animation-name: spinninglogo;
   animation-duration: 500ms;
   animation-iteration-count: 1;
   animation-timing-function: linear;
@@ -64,7 +64,7 @@ span.logo:active {
   animation-play-state: paused;
 }
 
-@keyframes psychologo  {
+@keyframes spinninglogo  {
   0% {
     background-color: green;
     transform: rotate(0deg);
@@ -129,6 +129,12 @@ span.logo:active {
   left: 10px;
 }
 
+.columns {
+  -webkit-column-count: 3;
+  -webkit-column-rule: 1px dotted gray;
+  text-align: justify;
+}
+
 .inside-box {
   display: inline-block;
   margin: 20px 20px 0;
@@ -138,6 +144,6 @@ span.logo:active {
 }
 
 #footer {
-  height: 100px;
+  height: 50px;
   background-image: -webkit-repeating-radial-gradient(circle closest-side, darkblue, lightgreen, red, orange, darkblue);
 }
