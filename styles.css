@@ -167,26 +167,30 @@ span.logo:active {
 
 .nav {
   position: absolute;
-  top: -325px;
-  opacity: 0.3;
-  background-color: beige;
+  top: -604px;
+  opacity: 0.1;
+  width: 400px;
+  height: 600px;
+  line-height: 600px;
 }
 
 .nav:hover {
   opacity: 1;
+  color: white;
 }
 
-.nav[data-dir=next] {
-  left: 764px;
+.nav[data-dir="-="] {
+  left: 400px;
+  text-align: right;
 }
 
-.nav[data-dir=prev]::before {
+.nav[data-dir="+="]::before {
   content: '<';
   font-size: 4em;
   cursor: pointer;
 }
 
-.nav[data-dir=next]::after {
+.nav[data-dir="-="]::after {
   content: '>';
   font-size: 4em;
   cursor: pointer;

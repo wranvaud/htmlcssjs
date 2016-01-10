@@ -5,7 +5,6 @@
 
   $('div.nav').on('click', function () {
     var dir = $(this).data('dir'),
-        dir = (dir == 'next') ? '-=' : '+=',
         slideshow = $('div.slideshow').children('ul'),
         imgWidth = $('img').width(),
         imgNb = slideshow.children('li').length,
