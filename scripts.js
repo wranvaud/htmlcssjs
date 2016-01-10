@@ -1,13 +1,13 @@
 (function($) {
 
   // Slideshow
-  $('div.slideshow').css('overflow', 'hidden');
+  var slideshow = $('div.slideshow').css('overflow', 'hidden').children('ul'),
+      imgWidth = $('img').width(),
+      imgNb = slideshow.children('li').length,
+      imgTotalWidth = imgWidth * imgNb;
 
   $('span.nav').on('click', function () {
     var dir = $(this).data('dir'),
-        slideshow = $('div.slideshow').children('ul'),
-        imgWidth = $('img').width(),
-        imgNb = slideshow.children('li').length,
         margin = parseInt(slideshow.css('margin-left'));
 
     if ( margin >= 0 && dir == '+=') {
