@@ -157,23 +157,41 @@ span.logo:active {
   display: inline;
 }
 
+.slideshow ul li img {
+  margin-right: -4px;
+}
+
 .controls {
   position: absolute;
 }
 
 .nav {
   position: absolute;
-  top: -300px
+  top: -325px;
+  opacity: 0.3;
+  background-color: beige;
+}
+
+.nav:hover {
+  opacity: 1;
 }
 
 .nav[data-dir=next] {
-  left: 750px;
+  left: 764px;
+}
+
+.nav[data-dir=prev]::before {
+  content: '<';
+  font-size: 4em;
+  cursor: pointer;
 }
 
 .nav[data-dir=next]::after {
   content: '>';
   font-size: 4em;
+  cursor: pointer;
 }
+
 .inside-box {
   display: inline-block;
   margin: 20px 20px 0;
