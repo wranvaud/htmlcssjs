@@ -38,6 +38,22 @@
         <li>Item two <span>span inside li</span></li>
       </ul>
       <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur aliquet quam id dui posuere blandit. Proin eget tortor risus. Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh.</p>
+<div class="wrapper">
+  <div class="slideshow">
+    <ul>
+      <li><img src="img/img1.jpg" alt=""></li>
+      <li><img src="img/img2.jpg" alt=""></li>
+      <li><img src="img/img3.jpg" alt=""></li>
+      <li><img src="img/img4.jpg" alt=""></li>
+      <li><img src="img/img5.jpg" alt=""></li>
+    </ul>
+  </div>
+<div class="controls">
+  <div class="nav" data-dir="prev">Previous</div>
+  <div class="nav" data-dir="next">Next</div>
+</div>
+</div>
+
       <p>Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
       <div class="inside-box">
         This box is inside, floated to the right. <br>
@@ -50,10 +66,7 @@
   <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript">
     (function() {
-      $('.sidebar').find('li').eq(0).on('click', function(e) {
-        e.preventDefault();
-        console.log(e);
-      });
+
     })();
   </script>
   </body>

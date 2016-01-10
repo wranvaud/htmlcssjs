@@ -1,4 +1,7 @@
-window.onload= function() {
+(function() {
+
+  var liwidth = $('.sidebar li a').width();
+  console.log(liwidth);
 
   var autoReloadCheckbox = document.getElementById("checkreload");;
   autoReloadCheckbox.onchange=autoReload;
@@ -9,4 +12,4 @@ window.onload= function() {
     }, 1000);
 
   }
-}
+})();
