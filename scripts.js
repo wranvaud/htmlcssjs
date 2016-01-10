@@ -6,12 +6,10 @@
   $('div.nav').on('click', function () {
     var dir = $(this).data('dir'),
         dir = (dir == 'next') ? '-=' : '+=',
-        img = $('img');
-        slideshow = $('div.slideshow').children('ul');
-        imgWidth = img.width(),
+        slideshow = $('div.slideshow').children('ul'),
+        imgWidth = $('img').width(),
         imgNb = slideshow.children('li').length,
-        margin = parseInt(slideshow.css('margin-left')),
-        goTo = margin;
+        margin = parseInt(slideshow.css('margin-left'));
 
     if ( margin >= 0 && dir == '+=') {
       slideshow.animate({'margin-left': -imgWidth * (imgNb -1)});
