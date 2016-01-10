@@ -7,7 +7,7 @@ body {
   border: 1px solid #000;
 }
 
-span {
+.highlight {
   background-color: gray;
 }
 
@@ -135,18 +135,15 @@ span.logo:active {
   text-align: justify;
 }
 
-.wrapper {
+.slideshow {
   width: 800px;
   height: 600px;
   margin: 0 auto;
   overflow: auto;
 }
 
-.slideshow {
-  width: 10000px;
-}
-
 .slideshow ul {
+  width: 10000px;
   list-style-type: none;
   margin: 0;
   padding: 0;

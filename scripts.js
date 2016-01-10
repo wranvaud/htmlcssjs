@@ -1,9 +1,9 @@
 (function($) {
 
   // Slideshow
-  $('div.wrapper').css('overflow', 'hidden');
+  $('div.slideshow').css('overflow', 'hidden');
 
-  $('div.nav').on('click', function () {
+  $('span.nav').on('click', function () {
     var dir = $(this).data('dir'),
         slideshow = $('div.slideshow').children('ul'),
         imgWidth = $('img').width(),
