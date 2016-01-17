@@ -185,12 +185,14 @@ span.logo:active {
   content: '<';
   font-size: 4em;
   cursor: pointer;
+  text-shadow: 0 0 5px black;
 }
 
 .nav[data-dir="-="]::after {
   content: '>';
   font-size: 4em;
   cursor: pointer;
+  text-shadow: 0 0 5px black;
 }
 
 .inside-box {
