@@ -91,6 +91,7 @@ span.logo:active {
   transition-duration: 500ms, 500ms, 500ms;
   transition-delay: 0s, 0s, 1s;
   transition-timing-function: ease, ease-in, ease;
+  cursor: crosshair;
 }
 
 .sitename:hover {
