@@ -113,13 +113,17 @@ span.logo:active {
   background-color: lightgray;
   margin: 30px auto;
   padding: 30px;
-  border: 1px solid #000;
-  position: relative;
-  display: block;
   width: 80vw;
   min-width: 320px;
   max-width: 1080px;
+  position: relative;
+  border: 1px solid #000;
   overflow: auto;
+  display: block;
+}
+
+.content:first-letter { // this only works for text in .content not inside <p>
+    font-size: 52px;
 }
 
 .repositioned {
