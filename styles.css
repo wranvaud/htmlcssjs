@@ -122,8 +122,10 @@ span.logo:active {
   display: block;
 }
 
-.content:first-letter { // this only works for text in .content not inside <p>
+/* this only works for text in .content not inside <p> */
+.content:first-letter {
     font-size: 52px;
+    color: beige;
 }
 
 .repositioned {
