@@ -129,6 +129,94 @@ span.logo:active {
   left: 10px;
 }
 
+.columns {
+  -webkit-column-count: 3;
+  -webkit-column-rule: 1px dotted gray;
+  text-align: justify;
+}
+
+.slideshow {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: auto;
+  border: 5px #2C4967 solid;
+  outline: 5px #94A3C4 solid;
+}
+
+.slideshow ul {
+  width: 10000px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.slideshow ul li {
+  display: inline;
+}
+
+.slideshow ul li img {
+  margin-right: -4px;
+}
+
+.controls {
+  position: absolute;
+}
+
+@keyframes navArrows {
+  0% {
+    left: 550px;
+    opacity: 0;
+  }
+  100% {
+    left: 400px;
+    opacity: 1;
+  }
+}
+
+.nav {
+  position: absolute;
+  top: -604px;
+  opacity: 0;
+  width: 400px;
+  height: 600px;
+  line-height: 600px;
+}
+
+.nav:hover {
+  opacity: 1;
+  color: white;
+}
+
+.nav[data-dir="-="] {
+  left: 400px;
+  opacity: 0;
+  text-align: right;
+}
+
+.nav[data-dir="-="]::after {
+  content: '>';
+  font-size: 4em;
+  cursor: pointer;
+  text-shadow: 0 0 5px black;
+}
+
+.nav[data-dir="-="]:hover {
+  opacity: 1;
+  animation-name: navArrows;
+  animation-duration: 400ms;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+.nav[data-dir="+="]::before {
+  content: '<';
+  font-size: 4em;
+  cursor: pointer;
+  text-shadow: 0 0 5px black;
+}
+
 .inside-box {
   display: inline-block;
   margin: 20px 20px 0;
